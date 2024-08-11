@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Graph Generator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Create Your Graph</h1>
+    <form id="graphForm">
+        <label for="xData">X-axis data (comma-separated):</label><br>
+        <input type="text" id="xData" name="xData" required><br><br>
+        <label for="yData">Y-axis data (comma-separated):</label><br>
+        <input type="text" id="yData" name="yData" required><br><br>
+        <button type="submit">Generate Graph</button>
+    </form>
+
+    <h2>Your Graph:</h2>
+    <canvas id="graphCanvas" width="400" height="400"></canvas> <!-- Canvas for graph -->
+
+    <script src="script.js"></script> <!-- Link to your JavaScript -->
+</body>
+</html>
